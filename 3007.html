@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+   
+</head>
+<body>
+    <center>
+<div class="container">
+    
+    <form>
+        <table style="background-color:#196574; color:#fff; width:100%; border-radius:10px; border:2px solid #fff;" cellpadding="8">
+            <h2>Application Form</h2>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname" required></td>
+                <td>Last Name:</td>
+                <td><input type="text" name="lname" required></td>
+            </tr>
+            <tr>
+                <td>Date of birth:</td>
+                <td><input type="date" name="dob" required></td>
+                <td>Age:</td>
+                <td><input type="number" name="age" min="1" max="99" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+                <td>Email Address:</td>
+                <td><input type="email" name="email" required placeholder="Enter email address"></td>
+            </tr>
+            <tr>
+                <td class="section-label" colspan="4">Positions Available:</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label><input type="radio" name="position" value="junior" required> Junior Developer</label>
+                    <label><input type="radio" name="position" value="mid-level"> Mid-level Developer</label>
+                    <label><input type="radio" name="position" value="senior"> Senior Developer</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="section-label" colspan="4">Programming Languages:</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label><input type="checkbox" name="languages" value="java"> Java</label>
+                    <label><input type="checkbox" name="languages" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" name="languages" value="python"> Python</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+            <tr>
+                <td class="actions" colspan="4">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</center>
+</body>
+</html>
